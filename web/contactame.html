@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>.: Asignación 5 :.</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" >
+        <!-- Hoja de Estilo Externa -->
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logoisw.jpg" alt="Logo ISW" height="90" width="100"/>
+            </div>
+            <div class="titulo">
+                <h1>Asignación 5</h1>
+            </div>
+            <div class="contacto">
+                <a href="mailto:alejandro.gil228773@potros.itson.edu.mx">
+                    <img src="img/correo.jpg" alt="Correo"/>
+                </a>
+            </div>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="descripcion.html">Descripción</a></li>
+                <li><a href="aficiones.html">Aficiones</a></li>
+                <li><a href="contactame.html">Contáctame</a></li>
+            </ul>
+            <br>
+        </nav>
+        
+        <main>
+            <h2>Contáctame</h2>
+
+            Puedes contactarme de la siguiente manera...<br>
+            <br>
+
+            <form action="mailto:alejandro.gil228773@potros.itson.edu.mx" method="post" enctype="text/plain">
+                <!-- Campo de texto para el nombre -->
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <!-- Campo de texto para la dirección -->
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion"><br><br>
+
+                <!-- Campo de texto para el correo electrónico -->
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!-- Menú de selección para la ocupación -->
+                <label for="ocupacion">Ocupación:</label>
+                <select id="ocupacion" name="ocupacion">
+                    <option value="Estudiante">Estudiante</option>
+                    <option value="Profesional">Profesional</option>
+                    <option value="Otro">Otro</option>
+                </select><br><br>
+
+                <!-- Casillas de verificación para aficiones -->
+                <label>Aficiones:</label><br>
+                <input type="checkbox" id="aficiones1" name="aficiones[]" value="Deportes">
+                <label for="aficiones1">Deportes</label><br>
+                <input type="checkbox" id="aficiones2" name="aficiones[]" value="Música">
+                <label for="aficiones2">Música</label><br>
+                <input type="checkbox" id="aficiones3" name="aficiones[]" value="Lectura">
+                <label for="aficiones3">Lectura</label><br><br>
+
+                <!-- Botones de radio para aficiones -->
+                <label>¿Te gustaría que te agregue a mi lista de amigos en Instagram?</label><br>
+                <input type="radio" id="respuesta1" name="answYes" value="Sí">
+                <label for="aficiones1">Sí</label><br>
+                <input type="radio" id="respuesta2" name="answNo" value="No">
+                <label for="aficiones2">No</label><br>
+                <br>
+
+                <!-- Área de texto para comentarios -->
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+                <!-- Botones de enviar y restablecer -->
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restablecer">
+            </form>
+            <br>
+        </main>
+        <footer>
+            <p>&COPY; 2023 Alejandro Gil Aguilar. Derechos Reservados.</p>
+            <p>Contacto: alejandro.gil228773@potros.itson.edu.mx. ITSON ISW</p>
+        </footer>
+        
+    </body>
+</html>
